@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<title>WikiSyntax</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+
+
+<div id="Typefaces"><h3 id="Typefaces" class="header"><a href="#Typefaces">Typefaces</a></h3></div>
+
+<ul>
+<li>
+<span id="Typefaces-bold text"></span><strong id="bold text">bold text</strong>
+
+<li>
+<em>italic text</em>
+
+<li>
+<em><span id="Typefaces-bold italic text"></span><strong id="bold italic text">bold italic text</strong></em>
+
+<li>
+<del>strikeout text</del>
+
+<li>
+<code>code (no syntax) text</code>
+
+<li>
+super<sup><small>script</small></sup>
+
+<li>
+sub<sub><small>script</small></sub>
+
+<li>
+Test: render this as html: <code style='background-color:#ffe119;color:black;'>#ffe119</code>
+
+</ul>
+<div id="Special Words"><h3 id="Special Words" class="header"><a href="#Special Words">Special Words</a></h3></div>
+
+<ul>
+<li>
+<span class="todo">TODO</span>
+
+<li>
+<span class="todo">DONE</span>
+
+<li>
+<span class="todo">STARTED</span>
+
+<li>
+<span class="todo">FIXME</span>
+
+<li>
+<span class="todo">FIXED</span>
+
+<li>
+<span class="todo">XXX</span>
+
+</ul>
+<div id="Links"><h3 id="Links" class="header"><a href="#Links">Links</a></h3></div>
+
+<ol>
+<li>
+Plain link:
+
+<ul>
+<li>
+<a href="This is a link.html">This is a link</a>
+
+</ul>
+<li>
+Link with a description
+
+<ul>
+<li>
+<a href="This is a link source.html">Description of the link</a>
+
+</ul>
+<li>
+Link back to the index:
+
+<ul>
+<li>
+<a href="index.html">/index</a>
+
+</ul>
+<li>
+Raw URL
+
+<ul>
+<li>
+<a href="https://github.com/vimwiki/vimwiki.git">https://github.com/vimwiki/vimwiki.git</a>
+
+</ul>
+<li>
+External files
+
+<ul>
+<li>
+<a href="home/usuario/Documents/Sample_file.txt.html">/home/usuario/Documents/Sample_file.txt</a>
+
+</ul>
+<li>
+Transclusion
+
+<ul>
+<li>
+Content that is to be included into the HTML output, rather than referenced via hyperlin.
+
+<li>
+Example:
+
+<li>
+<img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Thomas_Tank_Engine_1.JPG" />
+
+</ul>
+<li>
+Thumbnail links
+
+<ul>
+<li>
+Click the train to go back to the main page:
+			<a href="index.html"><img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Thomas_Tank_Engine_1.JPG" /></a>
+
+</ul>
+</ol>
+<div id="Headers"><h1 id="Headers" class="header"><a href="#Headers">Headers</a></h1></div>
+
+<div id="Header 1"><h1 id="Header 1" class="header"><a href="#Header 1">Header 1</a></h1></div>
+<div id="Header 1-Header 2"><h2 id="Header 2" class="header"><a href="#Header 1-Header 2">Header 2</a></h2></div>
+<div id="Header 1-Header 2-Header 3"><h3 id="Header 3" class="header"><a href="#Header 1-Header 2-Header 3">Header 3</a></h3></div>
+
+<div id="Centered Header"><h1 id="Centered Header" class="header justcenter"><a href="#Centered Header">Centered Header</a></h1></div>
+ 
+<div id="Centered Header-Lists"><h3 id="Lists" class="header"><a href="#Centered Header-Lists">Lists</a></h3></div>
+
+<p>
+Unordered lists:	
+</p>
+<ul>
+<li>
+Bulleted list item 1
+
+<li>
+Bulleted list item 2
+
+</ul>
+<p>
+or:
+</p>
+<ul>
+<li>
+Bulleted list item 1
+
+<li>
+Bulleted list item 2
+
+</ul>
+<p>
+Ordered lists:
+</p>
+<ol>
+<li>
+Numbered list item 1
+
+<li>
+Numbered list item 2
+
+</ol>
+<p>
+or:
+</p>
+<ol>
+<li>
+Numbered list item 1
+
+<li>
+Numbered list item 2
+
+<li>
+Numbered list item 3
+
+</ol>
+<p>
+or:
+</p>
+<ol>
+<li>
+Numbered list item 1
+
+<li>
+Numbered list item 2
+
+<li>
+Numbered list item 3
+
+</ol>
+<p>
+or:
+</p>
+<ol>
+<li>
+Numbered list item 1
+
+<li>
+Numbered list item 2
+
+<li>
+Numbered list item 3
+
+</ol>
+<p>
+or:
+</p>
+<ol>
+<li>
+Numbered list item 1
+
+<li>
+Numbered list item 2
+
+<li>
+Numbered list item 3
+
+</ol>
+<p>
+or:
+</p>
+<ol>
+<li>
+Numbered list item 1
+
+<li>
+Numbered list item 2
+
+<li>
+Numbered list item 3
+
+</ol>
+	
+<p>
+Obs.: When converted to HTML these all become the same numbering scheme.
+</p>
+
+<p>
+You can nest and mix the various types:
+</p>
+<ul>
+<li>
+Bulleted list item 1
+
+<li>
+Bulleted list item 2
+
+<ol>
+<li>
+Numbered list sub item 1
+
+<li>
+more ..
+
+<ul>
+<li>
+and more...
+
+<li>
+...
+
+</ul>
+<li>
+Numbered list sub item 2
+
+<ol>
+<li>
+Numbered list sub sub item 1
+
+<li>
+Numbered list sub sub item 2
+
+</ol>
+<li>
+etc.
+
+</ol>
+<li>
+Bulleted list item 3
+
+</ul>
+<p>
+Definition lists:
+<dl>
+<dt>  Term 1</dt>
+<dd>Definition 1</dd>
+<dt>  Term 2</dt>
+<dt>  </dt>
+<dd>Definition 2</dd>
+<dt>  </dt>
+<dd>Definition 3</dd>
+</dl>
+</p>
+  
+<div id="Centered Header-Tables"><h3 id="Tables" class="header"><a href="#Centered Header-Tables">Tables</a></h3></div>
+
+<p>
+Tables are created by entering the content of each cell separated by |
+delimiters. You can insert other inline wiki syntax in table cells, including
+typeface formatting and links.
+For example:
+</p>
+
+<table class='center'>
+<thead>
+<tr>
+<th>
+Year
+</th>
+<th>
+Temperature (low)
+</th>
+<th>
+Temperature (high)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+1900
+</td>
+<td>
+-10
+</td>
+<td>
+25
+</td>
+</tr>
+<tr>
+<td>
+1910
+</td>
+<td>
+-15
+</td>
+<td>
+30
+</td>
+</tr>
+<tr>
+<td>
+1920
+</td>
+<td>
+-10
+</td>
+<td>
+32
+</td>
+</tr>
+<tr>
+<td>
+1930
+</td>
+<td>
+<em>N/A</em>
+</td>
+<td>
+<em>N/A</em>
+</td>
+</tr>
+<tr>
+<td>
+1940
+</td>
+<td>
+-2
+</td>
+<td>
+40
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+If you put &gt; in a cell, the cell spans the left column.
+If you put \/ in a cell, the cell spans the above row.
+For example:
+</p>
+
+<table class='center'>
+<tr>
+<td rowspan="3">
+a
+</td>
+<td>
+b
+</td>
+<td>
+c
+</td>
+<td>
+d
+</td>
+</tr>
+<tr>
+<td rowspan="2" colspan="2">
+e
+</td>
+<td>
+f
+</td>
+</tr>
+<tr>
+<td>
+g
+</td>
+</tr>
+<tr>
+<td colspan="4">
+h
+</td>
+</tr>
+</table>
+
+<div id="Centered Header-Preformatted text"><h3 id="Preformatted text" class="header"><a href="#Centered Header-Preformatted text">Preformatted text</a></h3></div>
+<p>
+Use \{\{\{ and }}} to define a block of preformatted text:
+</p>
+<pre>
+  Tyger! Tyger! burning bright
+   In the forests of the night,
+    What immortal hand or eye
+     Could frame thy fearful symmetry?
+  In what distant deeps or skies
+   Burnt the fire of thine eyes?
+    On what wings dare he aspire?
+     What the hand dare seize the fire?
+</pre>
+
+
+<p>
+You can add optional information after the {{{:
+</p>
+<pre class="brush: python">
+ def hello(world):
+     for x in range(10):
+         print("Hello {0} number {1}".format(world, x))
+</pre>
+
+<div id="Centered Header-Mathematical formulae (not working atm)"><h3 id="Mathematical formulae (not working atm)" class="header"><a href="#Centered Header-Mathematical formulae (not working atm)">Mathematical formulae (not working atm)</a></h3></div>
+
+<p>
+Mathematical formulae are highlighted, and can be rendered in HTML using the
+powerful open source display engine MathJax (<a href="https://www.mathjax.org/).">https://www.mathjax.org/).</a>
+</p>
+
+<p>
+There are three supported syntaxes, which are inline, block display and
+block environment.
+</p>
+
+<p>
+Inline math is for short formulae within text. It is enclosed by single
+dollar signs, e.g.:
+ \( \sum_i a_i^2 = 1 \)
+</p>
+
+<p>
+Block display creates a centered formula with some spacing before and after
+it. It must start with a line including only {{$, then an arbitrary number
+of mathematical text are allowed, and it must end with a line including only
+}}$.
+E.g.:
+</p>
+\[
+\sum_i a_i^2
+=
+1
+\]
+
+<p>
+Note: no matter how many lines are used in the text file, the HTML will
+compress it to one line only.
+</p>
+
+<div id="Centered Header-Blockquotes"><h3 id="Blockquotes" class="header"><a href="#Centered Header-Blockquotes">Blockquotes</a></h3></div>
+
+<p>
+Text which starts with 4 or more spaces is a blockquote.
+</p>
+<pre><code>This would be a blockquote in Vimwiki. It is not highlighted in Vim but
+could be styled by CSS in HTML. Blockquotes are usually used to quote a
+long piece of text from another source.
+</code></pre>
+
+<p>
+A group of lines prefixed with &gt; also specifies a blockquote, with the caveat
+that the &gt; syntax allow empty lines to signal multiple paragraphs.
+</p>
+
+<blockquote>
+<p>
+ This also signals a block quote.
+
+</p></blockquote>
+</pre></code>
+<p>
+&gt; You can use empty lines to signal multiple paragraphs kept inside the same
+</p>
+<blockquote>
+<p>
+ blockquote.
+</p></blockquote>
+
+</body>
+</html>

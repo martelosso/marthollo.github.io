@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<title>navigation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="Horizontal line"><h2 id="Horizontal line" class="header"><a href="#Horizontal line">Horizontal line</a></h2></div>
+
+<p>
+4 or more dashes at the start of the line is a horizontal line:
+</p>
+
+<hr />
+
+<div id="Tags"><h2 id="Tags" class="header"><a href="#Tags">Tags</a></h2></div>
+
+<p>
+You can tag a wiki file, a header or an arbitrary place in a wiki file. Then, you can use Vim's built-in tag search functionality or Vimwiki's tag related commands to quickly jump to all ocurrences of the tag.
+</p>
+
+<p>
+A tag is a sequence of non-space characters between two colons:
+	<span id="Tags-tag-example"></span><span class="tag" id="tag-example">tag-example</span>
+</p>
+	
+<p>
+It is allowed to concatenate multiple tags in one line:
+</p>
+
+<p>
+	<span id="Tags-tag-one"></span><span class="tag" id="tag-one">tag-one</span> <span id="Tags-tag-two"></span><span class="tag" id="tag-two">tag-two</span>
+</p>
+	
+<p>
+If placed in the first two lines of a file, the whole file is tagged. If placed under a header, within the 2 lines below it, the header is then tagged with this tag, and the tag search commands will jump to this specifica header. Otherwise, the tag stands of its own and the search command jumps directly to it.
+</p>
+
+
+<div id="Folding/Outline"><h2 id="Folding/Outline" class="header"><a href="#Folding/Outline">Folding/Outline</a></h2></div>
+
+<p>
+Vimwiki allows you to use Vim's folding methods and options so you can fold your outline to  make it less distracting and easier to navigate. You can use Vimwiki's built-in folding methods or supply custom methods for folding. You control how folds behave by setting the g:vimwiki_folding variable to the desired value in your configuration file:
+</p>
+
+<p>
+	let g:vimwiki_folding = 'value'
+</p>
+	
+<p>
+Here's a example of how folds work with g:vimwiki_folding set to 'list'
+</p>
+
+<div id="Folding/Outline-My current task"><h5 id="My current task" class="header"><a href="#Folding/Outline-My current task">My current task</a></h5></div>
+
+<ul>
+<li class="done0">
+Do stuff 1
+
+<ul>
+<li class="done0">
+Do substuff 1.1
+
+<li class="done0">
+Do substuff 1.2
+
+<ul>
+<li class="done0">
+Do substuff 1.2.1
+
+<li class="done0">
+Do substuff 1.2.2
+
+</ul>
+<li class="done0">
+Do substuff 1.3
+
+</ul>
+<li class="done4">
+Do stuff 2
+
+<li class="done0">
+Do stuff 3
+
+</ul>
+<p>
+With this you can fold and unfold using the shortcuts 'rm' 'zM' and 'zr'. You can also use ctrl+space to tick/untick the boxes.
+</p>
+
+</body>
+</html>

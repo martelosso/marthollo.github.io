@@ -1,0 +1,162 @@
+<html>
+<head>
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+    <title>mappings</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <a href="index.html">Index</a> |
+    <a href="diary/diary.html">Diary</a>
+    <hr>
+    <div class="content">
+    
+<div id="Global Mappings"><h4 id="Global Mappings" class="header"><a href="#Global Mappings">Global Mappings</a></h4></div>
+
+<p>
+Bellow is a list of all default global key mappings provided by Vimwiki. By default, &lt;Leader&gt; equals to "\".
+</p>
+
+
+<pre>
+&lt;Leader&gt;ww		Open index file.
+&lt;Leader&gt;wt		Open index file on new tab.
+&lt;Leader&gt;ws		List and select available wikis.
+&lt;Leader&gt;wi		Open diary index file.
+&lt;Leader&gt;w&lt;Leader&gt;w	Open diary wiki-file for today.
+&lt;Leader&gt;w&lt;Leader&gt;t	Open diary wiki-file for today in new tab.
+&lt;Leader&gt;w&lt;Leader&gt;y	Open diary wiki-file for yesterday.
+&lt;Leader&gt;w&lt;Leader&gt;m	Open diary wiki-file for tomorrow.
+</pre>
+
+<div id="Local Mappings"><h4 id="Local Mappings" class="header"><a href="#Local Mappings">Local Mappings</a></h4></div>
+
+<p>
+Bellow is a list of all local key mappings provided by Vimiki. As local settings, they're available when FileType is set to "vimwiki", that is, when you are working on a vimwiki file.
+</p>
+
+<p>
+Glossary:
+</p>
+
+<pre>
+&lt;Leader&gt; 	"\" key
+&lt;CR&gt; 		"Enter" key
+&lt;S&gt;		"Shift" key
+&lt;C&gt;		"Control" key
+&lt;A&gt;		"Alt" key
+</pre>
+
+<p>
+Mappings on normal mode:
+</p>
+
+<pre>
+MAP			DESCRIPTION
+
+&lt;Leader&gt;wh		Convert current wiki page to HTML.
+&lt;Leader&gt;whh		Convert current wiki page to HTML and opent it in the 
+			browser.
+&lt;Leader&gt;w&lt;Leader&gt;i	Update diary section (delete old, insert new).
+&lt;CR&gt;			Follow/create wiki link (create target wiki page if needed).
+&lt;Backspace&gt;		Go back to previously visited wiki page.
+&lt;Leader&gt;wc		Colorize line or selection if from visual mode.
+&lt;Leader&gt;wn		Go to or create new wiki page.
+&lt;Leader&gt;wd		Delete wiki page you are in.
+&lt;Leader&gt;wr		Rename wiki page you are in.
+=			Add header level. Create if needed.
+-			Remove header level.
+[[			Go to the previous header in the buffer.
+]]			Go to the next header in the buffer.
+[=			Go to the previous header which has the same level as the .
+			header the cursor is currently under.
+]=			Go to the next header which has the same level as the
+			header the cursor is currently under.
+]u [u			Go one level up -- that is, to the parent header ofd the 
+			header the cursor is currently under.
++			Create and/or decorate links. Depending on the context, 
+			this command will: convert words into wikilinks; conver raw 
+			URLs into wikilinks; and add placeholder description text 
+			to wiki- or weblinks that are missing descriptions. Can 
+			be activated in normal mode with the cursor over a word 
+			or link, or in visual mode with the selected [[text]].
+&lt;C-Space&gt;		Toggle checkbox of a list item on/off
+gnt			Find next unfinished task in the current page.
+gl&lt;Space&gt;		Remove checkbox from list item.
+gL&lt;Space&gt;		Remove checkboxes from all sibling list items.
+gln			Increase the "done" status of a list checkbox, i. e. 
+			from [ ] to [.] etc.
+glp			Descrese the done status.
+gll			Increase the level of a list item.
+gLl			Increase the level of a list item and all it's siblings.
+glh			Decrease the level of a list item.
+gLh			Decrease the level of a list item and all it's siblings.
+glr			Renumber list items if the cursor is on a numbered list item.
+gLr			Renumber list items in all numbered lists in the whole file.
+gl*			Make a list item out of a normal line or change the symbol
+			of the current list to #.
+gL*			Change the symbol of the current list to * (having issue).
+gl#			Make a list item out of a normal line or change the
+			symbol of th current item to #.
+gL#			Change the symbol of the current list to #.
+gl-			Make a list item of a normal line or change the symbol of
+			the current list to -
+gL-			Change the symbol of the current list to -.
+gl1			Make a list item out of a normal line or change the
+			symbol of the current item to 1., the numbering is
+			adjusted according to the surrounding list items.
+gL1			Change the symbol of the current list to 1. 2. ...
+gla			Make a list item out of a normal line or change the symbol
+			of the current item to a), the numbering is adjusted 
+			according to the surrounding list items.
+gLa			Change ... a) b)...
+glA			Make ... A) B)...
+gLA			Change ... A) B)...
+gli			Make ... i) ii) ...
+gLi			Change ... i) ii) ...
+glI			Make ... I) II) ...
+gLI			Change ... I) II) ...
+glx			Toggle checkbox of a list item disable/off
+gqq			Reformats table after making changes.
+gq1			Fast format table.
+&lt;A-left&gt;		Move current table column to the left.
+&lt;A-right&gt;		Move current table column to the right.
+&lt;C-up&gt;			Open the previous day's diary link if available.
+&lt;C-down&gt;		Open the next day's diary link if available.
+</pre>
+
+<p>
+Mappings on Insert mode:
+</p>
+
+<pre>
+MAP			DESCRIPTION
+
+&lt;CR&gt;			In a list item, insert a new bulletd/number in the next
+			line, numbers are incremented. In an empty list item,
+			delete the item symbol. This is useful to end a list,
+			simply press &lt;CR&gt; twice.
+&lt;S-CR&gt;			Does not insert a new list item, useful to create
+			multilined list items.
+&lt;C-T&gt;			Increase the level of a list item.
+&lt;C-D&gt;			Decrease the level of a list item.
+&lt;C-L&gt;&lt;C-K&gt;		Change the symbol of the current list item to the prev
+			available. From - to a) to I) to * to 1.
+&lt;C-L&gt;&lt;C-M&gt;		Create/remove a symbol from a list item.
+</pre>
+
+<div id="Text objects"><h4 id="Text objects" class="header"><a href="#Text objects">Text objects</a></h4></div>
+
+<pre>
+MAP	DESCRIPTION
+
+ah	A header including its content up to the next header. 
+ih	The content under a header (like 'ah', but excluding the header itself and 
+	trailing lines).
+aH	A header including all of its subheaders. When [count] is 2, include the
+	parent header, when count is 3, the grandparents and so on.
+iH	Like 'aH', but excluding the header itself and trailing empty lines.
+</pre>
+
+    </div>
+</body>
+</html>
